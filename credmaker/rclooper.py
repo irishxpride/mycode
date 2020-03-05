@@ -5,7 +5,7 @@ i=0
 
 for row in csv.reader(f):
     i += 1
-    filename = "admin.rc%d"%(i,)
+    filename = "admin.rc%d"%(i)
     rcfile = open(filename, "w")
     print("export OS_AUTH_URL=" + row[0], file=rcfile)
     print("export OS_IDENTITY_API_VERSION=3=", file=rcfile)
